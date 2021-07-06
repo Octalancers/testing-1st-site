@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
+		<title>Petir – Documentation</title>
+		<link rel="stylesheet" href="css/highlight.min.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<div class="container">
+			<nav>
+				<ul>
+					<li class="parent"><a href="#introduction">Introduction</a></li>
+					<li class="parent"><a href="#html-pages">HTML & Site Structure</a>
+						
+					</li>
+					<li class="parent"><a href="#css">CSS</a></li>
+					<li class="parent"><a href="#javascript">Javascript</a></li>
+					<li class="parent"><a href="#credits">Credits</a></li>
+				</ul>
+			</nav>
+			<main>
+				<section id="introduction">
+					<div class="heading">
+						<h1>Introduction</h1><a class="live-preview" target="_blank" href="http://cingunt-themes.melankolia.space/themeforest/petir	/">Live Preview</a>
+					</div>
+					<p>Thank you for purchasing Petir template. This documentation will give you an overview of the template and help you to know how to customize it to your requirements.</p>
+					
+					<h3>Requirements</h3>
+					<h4>Text Editor</h4>
+					<p>To modify Petir you should have a text editor. You can use any editor (e.g. <a href="https://atom.io/">Atom</a>, <a href="https://www.sublimetext.com/">Sublime Text</a>, etc.).</p>
+					<h4>FTP Client</h4>
+					<p>To publish your website you will need transfer files to remote server of your hosting. It's very important to understand that you must either have your own server space or use someone else's. The server space can be purchased at many different places around the Internet. You need somewhere to put the files that you purchased so others can find them online. </p>
+					<p>To transfer your files to server you can use different FTP clients (e.g. <a href="https://filezilla-project.org/">FileZilla</a>). How to upload files to server with FileZilla you can read <a href="https://wiki.filezilla-project.org/FileZilla_Client_Tutorial_(en)">here.</a> You should upload the contents of an archive to root directory.</p>
+				</section>
+				<hr>
+				<h1 id="html-pages">HTML & Site Structure</h1>
+				<section id="header">
+                    <h3>HTML Structure</h3>
+                    <p>The layout in Petir is flexible because this use "bootstrap" system based on bootstrap grid. The general template structure is the same throughout the template. Here is the general structure :</p>
+				
+					<pre><code>
+&lt;!--Loader --&gt;
+&lt;div class=&quot;akar-loader&quot;&gt;
+&lt;/div&gt;
+&lt;!-- Loader end --&gt;    	
+
+&lt;!-- Start Navbar --&gt;
+&lt;nav class=&quot;navbar navbar-expand-lg&quot;&gt;
+&lt;/nav&gt;
+&lt;!-- End Navbar = --&gt;
+
+&lt;!-- Start Header --&gt;
+&lt;header class=&quot;valign header&quot;&gt;      
+&lt;/header&gt;
+&lt;!-- End Header --&gt;
+
+&lt;!-- Start About --&gt;
+&lt;section class=&quot;about&quot; data-scroll-index=&quot;1&quot;&gt; 
+&lt;/section&gt;
+
+&lt;!-- Portfolio Start --&gt;
+&lt;section class=&quot;portfolio&quot; data-scroll-index=&quot;2&quot;&gt;
+&lt;/section&gt;
+&lt;!-- Portfolio End --&gt;
+
+&lt;!-- Team Start --&gt;
+&lt;section class=&quot;team bg-main&quot; data-scroll-index=&quot;3&quot;&gt;
+&lt;/section&gt;
+&lt;!-- Team End --&gt;
+
+&lt;!-- Testimonial Start --&gt;
+&lt;section class=&quot;testimonial bg-main&quot; data-scroll-index=&quot;4&quot;&gt;
+&lt;/section&gt;
+
+&lt;!-- clients --&gt;
+	&lt;div class=&quot;partner bg-main&quot;&gt;        
+&lt;/div&gt;
+&lt;!-- Testimonial End --&gt;
+
+&lt;!-- Start Blog --&gt;
+&lt;section class=&quot;blog bg-main&quot; data-scroll-index=&quot;5&quot;&gt;
+&lt;/section&gt;
+
+&lt;!-- End Blog --&gt;
+
+&lt;!-- Start Contact --&gt;
+&lt;section class=&quot;contact bg-main mb-down&quot; data-scroll-index=&quot;6&quot;&gt;        
+&lt;/section&gt;
+&lt;!-- End Contact  --&gt;
+	
+&lt;!-- Start Footer --&gt;
+&lt;section class=&quot;footer bg-second&quot;&gt;
+&lt;/section&gt;
+&lt;!-- End Footer  --&gt;
+					</pre></code>
+                <h3>Visual Structure</h3>
+                <p>The layout in Petir have 8 sections and each sections and element present in it. </p>
+                <img src="img/1.png" alt="1" style="width:100%;">
+                <hr>
+                <hr>
+				<h1 id="css">CSS</h1>
+				<p>All CSS files located in <span class="mark">assets/css</span> & <span class="mark">assets/vendor</span> directory. Template has 9 css files:</p>
+				<ul>
+					<li>bootstrap.min.css</li>
+					<li>owl.carousel.min.css</li>
+                    <li>owl.carousel.default.css</li>
+                    <li>all.css</li>
+                    <li>magnific-popup.css</li>
+                    <li>animate.css</li>
+                    <li>style.css</li>
+                    <li>responsive.css</li>
+                </ul>
+                <h2>all.css</h2>
+				<p>Get vector icons and social logos on your website with Font Awesome, the web’s most popular icon set and toolkit. See more at <a href="https://fontawesome.com/">fontawesome.com</a></p>
+				<h2>aos.css</h2>
+                <p>Animate On Scroll Library See more at <a href="https://michalsnik.github.io/aos/">https://michalsnik.github.io/aos/</a></p>
+				<h2>bootstrap.min.css</h2>
+				<p>File with styles of Boostrap 4 Framework. It contains only grid system, other Boostrap styles not included. See more at <a href="http://getbootstrap.com">getbootstrap.com</a>.</p>
+				<h2>owl.carousel.min.css</h2>
+				<p>File with styles for slider. See more at <a href="https://owlcarousel2.github.io/OwlCarousel2/">owlcarousel2.github.io/OwlCarousel2</a>.</p>
+				<h2>style.css</h2>
+				<p>This is a main CSS file with 14 different sections:</p>
+				<ol>
+					<li>General Style</li>
+					<li>Navbar</li>
+					<li>Header 01 </li>
+					<li>Header 02 / Video</li>
+                    <li>Header 03 / Portfolio Focus</li>
+					<li>Header 04 / Particles</li>
+					<li>About</li>
+					<li>Portfolio</li>
+					<li>Team</li>
+					<li>Testimonial</li>
+					<li>Blog</li>
+					<li>Contact</li>
+					<li>Footer</li>
+					<li>Another (Demo)</li>
+                </ol>
+                <h4>responsive.css</h4>
+				<p>Section with responsive layout has different media quires. All media queries arranged in order of decay. If you want to add your media query, add it so as not to upset the order. To add you media query use the syntax:</p>
+				<pre><code>@media (max-width: Npx) {
+    /* Your Code Here */
+}</code></pre>
+				<p>Where N means number of pixels of screen.</p>
+				<hr>
+				<h1 id="javascript">Javascript</h1>
+				<p>All javascript files located in <span class="mark">assets/js</span> and <span class="mark">assets/vendor</span> directory. Template require 7 javascript plugins:</p>
+				<ol>
+					<li>jquery-3.3.1.min.js</li>
+					<li>particles.min.js</li>
+					<li>bootstrap.min.js</li>
+					<li>jquery.magnific-popup.min.js</li>
+                    <li>owl.carousel.min.js</li>
+                    <li>scrollit.js</li>
+					<li>popper.min.js</li>
+					<li>app.js</li>
+                    <li>Custom</li>
+				</ol>
+				<p>Also template require 1 main javascript file with user's functions called <span class="mark">custom.js</span>.</p>
+				<h2>jquery-3.3.1.min.js</h2>
+				<p>jQuery library. See more at <a href="http://jquery.com">jquery.com</a>.</p>
+				<h2>bootstrap.min.js</h2>
+				<p>Bootstrap javascript library. See more at <a href="http://getbootstrap.com">getbootstrap.com</a>.</p>
+                <h2>jquery.magnific-popup.min.js</h2>
+                <p>Pop Up plugin. See more at <a href="http://dimsemenov.com/plugins/magnific-popup/">magnific-popup</a></p>
+				<h2>owl.carousel.min.js</h2>
+				<p>Slider plugin. See more at <a href="https://owlcarousel2.github.io/OwlCarousel2/">owlcarousel2.github.io/OwlCarousel2</a>.</p>
+				<h2>particles.min.js</h2>
+				<p>Background plugin. See more at <a href="https://vincentgarreau.com/particles.js/">https://vincentgarreau.com/particles.js/</a>.</p>
+				
+				<h2>custom.js</h2>
+				<p>This is a user's javascript file with main function like different calling plugins and some own scripts. File has 8 sections:</p>
+				<ol>
+					<li>Owl Carousel Setup</li>
+					<li>Preloader</li>
+					<li>Navbar</li>
+					<li>Owl Carousel Navigation</li>
+					<li>Custom Button</li>
+					<li>Scroll Control</li>
+					<li>Pop Up</li>
+					<li>Animate.css on Owl Carousel</li>
+				</ol>
+				</pre>
+				<hr>
+				<h1 id="credits">Credits</h1>
+                <p>All images and icon come from :</p>
+				<ul>
+                    <li><a href="https://www.pexels.com/">Pexels</a></li>
+                </ul>
+                
+
+                <hr>
+                <br>
+                <p>Once again, thank you so much for purchasing this theme. As I said at the beginning, I'd be glad to help you if you have any questions relating to this theme. No guarantees, but I'll do my best to assist. If you have a more general question relating to the themes on ThemeForest, you might consider visiting the forums and asking your question in the "Item Discussion" section.</p>
+			</main>
+		</div>
+		<script src="js/plugins.min.js"></script>
+		<script src="js/functions.js"></script>
+	</body>
+</html>
