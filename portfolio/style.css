@@ -27,21 +27,21 @@ body
     font-size: 15px; 	
     line-height: 25px;
     font-weight: 400;	    
-    color: #6c6c6c;
-    background-color: #fff;
+    color: #E6E6E6;
+    background-color: #121212;
     overflow-x: hidden;
 }
 
 body a
 {
     text-decoration: none;
-    color: #000000;    
+    color: #E6E6E6;    
     transition: color .2s linear, background-color .2s linear, border-color .2s linear;
 }
 
 body a:hover
 {
-    color: #acacac;
+    color: #E6E6E6;
 }
 
 body img
@@ -438,8 +438,9 @@ body img
 
 .flickity-prev-next-button.next
 {
-    background-image: url('images/arrow_right@2x.png');
+    background-image: url('../assets/img/arrow_right@2x.png');
     background-size: 35px 20px;
+    filter: invert(1);
     width: 35px;
     height: 20px;
     transition: transform .3s ease;
@@ -447,8 +448,9 @@ body img
 
 .flickity-prev-next-button.previous
 {
-    background-image: url('images/arrow_left@2x.png');
+    background-image: url('../assets/img/arrow_left@2x.png');
     background-size: 35px 20px;
+    filter: invert(1);
     width: 35px;
     height: 20px;
     transition: transform .3s ease;
@@ -1604,4 +1606,49 @@ a.read-more:hover:after
     {
         width: 100%;
     }
+}
+
+/* Button */
+
+.main-button {
+    border: 1px solid transparent;
+    -webkit-border-image: 
+      -webkit-linear-gradient(right, #f9a766 0%,#fe7773 100%);
+    -moz-border-image:
+      -moz-linear-gradient(right, #f9a766  0%,#fe7773 100%);  
+    -o-border-image:
+      -o-linear-gradient(right, #f9a766 0%,#fe7773 100%);
+    border-image:
+      linear-gradient(to right, #f9a766 0%,#fe7773 100%);
+    border-image-slice: 1;
+    padding: 15px 60px;
+    color: #fff;
+    background-image: 
+    linear-gradient(to right, rgba(0,0,0,0) , rgba(0,0,0,0), #f9a766, #fe7773);
+   
+    background-size: 300% 100%;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.main-button:hover {
+    color: #111;
+    background-position: 100% 0;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+.main-button span, .top-button span {
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.main-button:focus, .top-button:focus {
+    outline: none;
+}
+
+.mt-30 {
+    margin-top: 30px !important; 
 }
