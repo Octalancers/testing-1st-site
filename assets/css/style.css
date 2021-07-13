@@ -197,7 +197,7 @@ h3.main-title{
 }
 
 h4.min-title::after{
-    content: ' ';
+    
     position: absolute;
     height: 1px;
     width: 10%;
@@ -1420,7 +1420,7 @@ ul li {
 
 /* partner */
 .partner  {
-   background: #f9a766;
+   background: #b592ff;
     padding: 40px 0;
 }
 
@@ -1434,6 +1434,23 @@ ul li {
 .partner img:hover{
     opacity: 1;
 }
+
+/* hireus */
+.hireus  {
+    background: #b592ff;
+     padding: 40px 0;
+ }
+ 
+ .hireus img {
+     cursor: pointer;
+     opacity: 0.6;
+     transition: all 200ms ease; 
+     
+ }
+ 
+ .hireus img:hover{
+     opacity: 1;
+ }
 
 
 /* ----------------------------------------------------------------

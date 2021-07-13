@@ -54,6 +54,7 @@
     // Owl Carousel
     //--------------------------------------------------
     $('.team .owl-carousel').owlCarousel({
+        navigation : true,
         loop: true,
         margin: 30,
         mouseDrag:true,
@@ -75,8 +76,9 @@
     });
 
     $('.testimonial .owl-carousel').owlCarousel({
-        loop: true,
-        margin: 30,
+        navigation : true,
+        loop: false,
+        margin: 70,
         mouseDrag:true,
         autoplay:false,
         dots: true,
@@ -97,6 +99,7 @@
     $('.portfolio .owl-carousel').owlCarousel({
         animateOut: 'zoomOut',
         animateIn: 'zoomIn',
+        navigation : true,
         loop: true,
         margin: 30,
         mouseDrag:true,
@@ -120,6 +123,7 @@
     $('.partner .owl-carousel').owlCarousel({
         animateOut: 'zoomOut',
         animateIn: 'zoomIn',
+        navigation : true,
         loop: true,
         margin: 70,
         mouseDrag:true,
@@ -141,7 +145,33 @@
         }
     });
 
+    $('.hireus .owl-carousel').owlCarousel({
+        animateOut: 'zoomOut',
+        animateIn: 'zoomIn',
+        navigation : true,
+        loop: false,
+        margin: 70,
+        mouseDrag:true,
+        autoplay:false,
+        dots: false,
+        nav: false,
+        responsiveClass:true,
+        responsive:{
+            0:{
+                items:2,
+                margin: 20,
+            },
+            600:{
+                items:4
+            },
+            1000:{
+                items:5
+            }
+        }
+    });
+
     $('.portfolio-focus .owl-carousel').owlCarousel({
+        navigation : true,
         loop: true,
         margin: 70,
         mouseDrag:false,
