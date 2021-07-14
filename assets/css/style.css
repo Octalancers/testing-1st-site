@@ -122,6 +122,8 @@ secondary background : #12141c;
     padding-bottom: 80px !important; 
 }
 
+
+
 section {
     padding: 100px 0;
 }
@@ -205,6 +207,21 @@ h4.min-title::after{
     background: #f9a766;
     right: 45%;
 }
+
+#preloader-custom {
+    position: fixed;
+    padding-top: 15%;
+    top: 0;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+
+    /* change if the mask should have another color then white */
+    z-index: 9999;
+    /* makes sure it stays on top */
+  }
 
 /*Loader Css Start*/
 .akar-loader {
