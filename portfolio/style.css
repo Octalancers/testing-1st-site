@@ -23,7 +23,7 @@ version 2.0
 
 body
 {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 15px; 	
     line-height: 25px;
     font-weight: 400;	    
@@ -144,9 +144,8 @@ body img
 
 .site-logo img
 {
-    width: 145px;
-    height: 250px;
-    margin-bottom: 100px;    
+    width: 250px;
+    margin-bottom: 50px;
 }
 
 .site-description
