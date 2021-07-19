@@ -1,6 +1,23 @@
 
 /* phone */
 @media (max-width: 575.98px) , (max-height: 500px) { 
+
+    
+    #preloader-custom {
+        position: fixed;
+        padding-top: 75%;
+        top: 0;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        text-align: center;
+    
+        /* change if the mask should have another color then white */
+        z-index: 9999;
+        /* makes sure it stays on top */
+      }
+
     .header {
         background: #000;
         position: relative;
@@ -166,6 +183,7 @@
     .portfolio-focus {
         margin-top : 50px;
     }
+
 }
 
 /* tablet */
