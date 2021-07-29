@@ -734,7 +734,7 @@
                             
                             <!-- form starts -->
                             <div class="dtr-form dtr-p-50 dtr-sm-p-20 dtr-border-5px dtr-rounded-xl bg-blue border-light-blue">
-                                <form id="contactform" method="post" action="php/contact-form.php">
+                                <form form name="drop" id="contactform" method="post" action="php/contact-form.php" data-netlify="true">
                                     <fieldset>
                                         <p>
                                             <input name="email"  class="required email" type="text" placeholder="Email">
@@ -756,7 +756,7 @@
                                             <input name="url" />
                                         </p>
                                         <p>
-                                            <textarea rows="6" name="message" id="message" class="required"  placeholder="Message"></textarea>
+                                            <textarea rows="6" name="message" id="message" class="required"  placeholder="Message with product link"></textarea>
                                         </p>
                                         <p class="text-center">
                                             <button class="dtr-btn dtr-btn-styled btn-red dtr-mt-20" type="submit">Order your video</button>
