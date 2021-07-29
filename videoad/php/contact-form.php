@@ -4,16 +4,16 @@
 if(isset($_POST['url']) && $_POST['url'] == ''){
 
 	// put your email address here
-	$youremail = 'yourname@mail.com';  
+	$youremail = 'contact@octalancer.com';  
 
 	// prepare message 
-	$body = "You have got a new message from the contact form on your website - Ainotion :
+	$body = "You have got a new message from the contact form on your website - Octalancer:
 	
 	Email:  $_POST[email]
 	Name:  $_POST[name]
 	Company:  $_POST[company]
 	Number:  $_POST[number]
-	Number of Employees:  $_POST[selectdropdown]
+	Number of Videos:  $_POST[selectdropdown]
 	Message:  $_POST[message]";
 
 	if( $_POST['email'] && !preg_match( "/[\r\n]/", $_POST['email']) ) {
@@ -22,7 +22,7 @@ if(isset($_POST['url']) && $_POST['url'] == ''){
 	  $headers = "From: $youremail";
 	}
 
-	mail($youremail, 'Message from Ainotion', $body, $headers );
+	mail($youremail, 'Message from Octalancer', $body, $headers );
 
 } ?>
 
