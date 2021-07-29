@@ -1,0 +1,6 @@
+/*----------------------------------------*/
+/*----- Update 1 -----*/
+/*----------------------------------------*/
+@media (max-width: 1024px) {
+.dtr-testimonial-slider { margin-left: 20px; margin-right: 20px; }
+}
