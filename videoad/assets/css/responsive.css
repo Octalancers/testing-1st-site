@@ -175,4 +175,8 @@
 .dtr-sm-pr-100, .dtr-sm-px-100 { padding-right: 100px !important }
 .dtr-sm-pb-100, .dtr-sm-py-100 { padding-bottom: 100px !important }
 .dtr-sm-pl-100, .dtr-sm-px-100 { padding-left: 100px !important }
+.gigVideo{
+    width : 300px;
+    height : 240px;
+}
 }

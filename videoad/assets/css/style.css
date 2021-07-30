@@ -755,3 +755,12 @@ opacity:0
 /*===== Common transitions =====*/
 .dtr-logo, a:link, .dtr-btn, button, input[type="submit"], input[type="reset"], .dtr-form-btn, select, textarea, input[type="text"], input[type="email"], input[type="url"], input[type="password"], input[type="number"], input[type="tel"], input[type="search"], #dtr-header-global, .dtr-social a { -webkit-transition: all .3s ease; transition: all .3s ease }
 .dtr-pricing, .dtr-pricing:hover { -webkit-transition: all .5s ease; transition: all .5s ease }
+
+video {
+    pointer-events: none;
+  }
+
+.gigVideo{
+    width : 720px;
+    height : 360px;
+}
