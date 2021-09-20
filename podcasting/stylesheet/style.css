@@ -3195,3 +3195,8 @@ input::-webkit-input-placeholder {
     background: -o-linear-gradient(left, rgba(117,38,215,1) 0%, rgba(242,105,253,1) 100%);
     background: linear-gradient(to right, rgba(117,38,215,1) 0%, rgba(242,105,253,1) 100%);
 }
+.myDiv {
+    margin: 1px;
+    border: 2px;
+    text-align: center;
+  }
