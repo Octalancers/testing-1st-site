@@ -593,7 +593,7 @@
 	
 // for sending form info
 const scriptURL =
-    "https://script.google.com/a/macros/octalancer.com/s/AKfycbyAPZN_MiZL3HVnuo3UCmoAYNLtXEbGQoEZStTDxnaSLqb0Bcz1tbchEnLbGzuGWsgUGA/exec";
+    "https://script.google.com/macros/s/AKfycbyAPZN_MiZL3HVnuo3UCmoAYNLtXEbGQoEZStTDxnaSLqb0Bcz1tbchEnLbGzuGWsgUGA/exec";
 const form = document.forms["google-sheet"];
 document.getElementById("main-form").addEventListener("submit", (e) => {
     console.log("submitted");
