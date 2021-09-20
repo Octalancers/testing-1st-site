@@ -601,6 +601,7 @@ document.getElementById("main-form").addEventListener("submit", (e) => {
     fetch(scriptURL, {
             method: "POST",
             body: new FormData(form),
+            mode: "no-cors",
         })
         .then((response) => {
             console.log("Data Posted Succesfully !!!");
