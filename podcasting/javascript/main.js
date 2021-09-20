@@ -588,3 +588,25 @@
         removePreloader();
     });
 })(jQuery);
+
+
+	
+// for sending form info
+const scriptURL =
+    "https://script.google.com/a/macros/octalancer.com/s/AKfycbyAPZN_MiZL3HVnuo3UCmoAYNLtXEbGQoEZStTDxnaSLqb0Bcz1tbchEnLbGzuGWsgUGA/exec";
+const form = document.forms["google-sheet"];
+document.getElementById("main-form").addEventListener("submit", (e) => {
+    console.log("submitted");
+    e.preventDefault();
+    fetch(scriptURL, {
+            method: "POST",
+            body: new FormData(form),
+        })
+        .then((response) => {
+            console.log("Data Posted Succesfully !!!");
+        })
+        .catch((error) => console.error("Error!", error.message));
+    console.log("Post submission");
+    document.getElementById("success-msg").style.display = "block";
+    document.getElementById("main-form").style.display = "none";
+});

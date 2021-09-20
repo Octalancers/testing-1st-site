@@ -3200,3 +3200,9 @@ input::-webkit-input-placeholder {
     border: 2px;
     text-align: center;
   }
+
+
+
+#success-msg {
+     display: none;
+ } 
